@@ -19,9 +19,15 @@ class tasksController extends http\controller
     public static function all()
     {
         $records = todos::findAll();
-        session_start();
+        /*session_start();
+           if(key_exists('userID',$_SESSION)) {
+               $userID = $_SESSION['userID'];
+           } else {
+               echo 'you must be logged in to view tasks';
+           }
         $userID = $_SESSION['userID'];
         $records = todos::findTasksbyID($userID);
+        */
         self::getTemplate('all_tasks', $records);
     }
     //to call the show function the url is called with a post to: index.php?page=task&action=create
@@ -44,6 +50,14 @@ class tasksController extends http\controller
         $record->body = $_REQUEST['body'];
         $record->save();
         print_r($_POST);
+    }
+    public static function save() 
+    {
+        session_start();
+        $task = new todo();
+        $task->body = $_POST['body'];
+        $task->ownerid = $_SESSION['userID'];
+        $task->save();
     }
     //this is the delete function.  You actually return the edit form and then there should be 2 forms on that.
     //One form is the todo and the other is just for the delete button
