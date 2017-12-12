@@ -16,7 +16,7 @@
 <input type="text" name="last_name" placeholder="LAST NAME"/>
 <br> 
 <input type='text' name="email" placeholder="EMAIL ADDRESS"  value=""/>
-
+<br>
 <input type="text" name="username" placeholder="USERNAME" value="" />
 <br>  
 <input type='password' name="password" placeholder="PASSWORD" value=""/>
@@ -25,7 +25,16 @@
 <br>
 <input type='text'name='birthday' placeholder="BIRTHDAY"/>
 <br>
-<input type='text'name='gender' placeholder="GENDER"/>
+<div class="col-half">
+        <h4>Gender</h4>
+        <div class="input-group">
+          <input type="radio" name="gender" value="male" id="gender-male"/>
+          <label for="gender-male">Male</label>
+          <input type="radio" name="gender" value="female" id="gender-female"/>
+          <label for="gender-female">Female</label>
+        </div>
+      </div>
+
 <br>
 <input type="hidden" name="action" value="register">
 
