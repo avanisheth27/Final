@@ -23,7 +23,21 @@
 <br>
 <input type='text' name='phone_number' placeholder="PHONE_NUMBER" value=""/>
 <br>
-<input type='text'name='birthday' placeholder="BIRTHDAY"/>
+<div class="row">
+      <div class="col-half">
+        <h4>Date of Birth</h4>
+        <div class="input-group">
+          <div class="col-third">
+            <input type="text" placeholder="DD"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="MM"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="YYYY"/>
+          </div>
+        </div>
+      </div>
 <br>
 <div class="col-half">
         <h4>Gender</h4>
