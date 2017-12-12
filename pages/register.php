@@ -1,35 +1,39 @@
-<!doctype html>
+<html>
 
-<html lang="en">
 <head>
-    <meta charset="utf-8">
+<body>
+<h1 align="center">Sign Up</h1>
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+<link rel="stylesheet" type="text/css" href="log.css">
 </head>
 
-<body>
+<div class="overall">
+<form method = 'post' action = 'index.php'>
+<div class="form-input">
 
+<input type="text" name='first_name' placeholder="FIRST NAME"/>
+<br>
+<input type="text" name="last_name" placeholder="LAST NAME"/>
+<br> 
+<input type='text' name="email" placeholder="EMAIL ADDRESS"  value=""/>
 
-<form action="index.php?page=accounts&action=register" method="post">
-    First name: <input type="text" name="fname"><br>
-    Last name: <input type="text" name="lname"><br>
-    Email: <input type="text" name="email"><br>
-    Phone: <input type="text" name="phone"><br>
-    Birthday: <input type="text" name="birthday"><br>
-    Gender: <input type="text" name="gender"><br>
-    Password: <input type="password" name="password"><br>
-    <input type="submit" value="Submit form">
+<input type="text" name="username" placeholder="USERNAME" value="" />
+<br>  
+<input type='password' name="password" placeholder="PASSWORD" value=""/>
+<br>
+<input type='text' name='phone_number' placeholder="PHONE_NUMBER" value=""/>
+<br>
+<input type='text'name='birthday' placeholder="BIRTHDAY"/>
+<br>
+<input type='text'name='gender' placeholder="GENDER"/>
+<br>
+<input type="hidden" name="action" value="register">
+
+<input type="submit" value="Register" class="btn-register" />
 </form>
+</form>
+</div>
 
-
-<script src="js/scripts.js"></script>
 </body>
 </html>
+
