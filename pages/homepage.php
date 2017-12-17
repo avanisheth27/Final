@@ -45,26 +45,21 @@ button:hover {
     <meta charset="utf-8">
 
     <title>Todo Task Management</title>
+    <h1 align="center">Todo Task Manangement</h1>
+<h2 align="center">Login</h2>
     <meta name="description" content="Todo Task Management">
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    
 </head>
 
 <body>
+<div class = "overall">
 
 
-<h1>
-<?php
-//this how to print some data;
-$config = Manage::config();
-echo $config['site_name'];
-?></h1>
-<h2>Login</h2>
+
 
 <form action="index.php?page=accounts&action=login" method="POST">
     <div class="container">
