@@ -6,6 +6,11 @@ form {
     border: 0px solid #f1f1f1;
 }
 
+.center {
+    text-align: center;
+    border: 3px;
+}
+
 body {
    margin: 0 auto;
 background-repeat: no-repeat;
@@ -23,6 +28,7 @@ margin-top: 100px;
 }
 
 input[type="text"],input[type="password"] {
+text-align: center;
 height: 45px;
 width: 300px;
 font-size: 15px;
@@ -74,9 +80,10 @@ button:hover {
 
 <form action="index.php?page=accounts&action=login" method="POST">
 <div class="form-input">
-    
+        <div class="center">
         <label><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="email" required><br>
+        </div>
 
         <label><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required><br>
