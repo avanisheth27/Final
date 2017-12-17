@@ -17,7 +17,7 @@
 
 <body>
 
-<h1>Page Not Found 404</h1>
+<h1><?php echo $data ?></h1>
 
 
 <script src="js/scripts.js"></script>
