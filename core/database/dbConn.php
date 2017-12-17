@@ -1,10 +1,12 @@
 <?php
+
 namespace database;
 //singleton pattern
 class dbConn
 {
     //variable to hold connection object.
     protected static $db;
+
     //private construct - class cannot be instatiated externally.
     private function __construct()
     {
@@ -17,6 +19,7 @@ class dbConn
             echo "Connection Error: " . $e->getMessage();
         }
     }
+
     // get connection function. Static method - accessible without instantiation
     public static function getConnection()
     {
