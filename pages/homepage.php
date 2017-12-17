@@ -10,7 +10,7 @@ body {
    margin: 0 auto;
 background-repeat: no-repeat;
 background-size: 100% 1000px;
-   background-color: #41f4bb;
+   background-color: #42f4aa;
 }
 overall{
 width: 100px;
@@ -57,7 +57,7 @@ button:hover {
 
     <title>Todo Task Management</title>
     <h1 align="center">Todo Task Manangement</h1>
-<h2 align="center">Login</h2>
+
     <meta name="description" content="Todo Task Management">
     <meta name="author" content="SitePoint">
 
@@ -76,11 +76,11 @@ button:hover {
 <div class="form-input">
     
         <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="email" required>
+        <input type="text" placeholder="Enter Username" name="email" required><br>
 
         <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-
+        <input type="password" placeholder="Enter Password" name="password" required><br>
+<br>
         <button type="submit">Login</button>
     </div>
 </form>
