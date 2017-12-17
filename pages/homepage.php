@@ -7,29 +7,40 @@ form {
 }
 
 body {
-   
-   background-color: #42f4aa;
+   margin: 0 auto;
+background-repeat: no-repeat;
+background-size: 100% 1000px;
+   background-color: #41f4bb;
+}
+overall{
+width: 100px;
+height: 100px;
+text-align: center;
+background-color: rgba(52,73,94,0.7);
+border-radius: 4px;
+margin: 0 auto;
+margin-top: 100px;
 }
 
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 08px 0;
-    display: inline-block;
-    background:  ;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+input[type="text"],input[type="password"] {
+height: 45px;
+width: 300px;
+font-size: 15px;
+margin-top: 30px;
+background-color: #fff;
+padding-lefit: 10px;
 }
 
-button  {
-    background-color: #000098;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 30%;
-    
+button {
+margin-top: 5px;
+font-size: 20px;
+width: 340px;
+padding: 15px 30px;
+color: #fff;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+background-color: #8878cc;
 }
 
 button:hover {
@@ -62,7 +73,8 @@ button:hover {
 
 
 <form action="index.php?page=accounts&action=login" method="POST">
-    <div class="container">
+<div class="form-input">
+    
         <label><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="email" required>
 
@@ -73,6 +85,7 @@ button:hover {
     </div>
 </form>
 <h1><a href="index.php?page=accounts&action=register">Register</a></h1>
+</div>
 
 <script src="js/scripts.js"></script>
 </body>
