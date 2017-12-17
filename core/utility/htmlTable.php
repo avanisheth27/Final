@@ -1,11 +1,15 @@
 <?php
+
 namespace utility;
 //namespace MyProject\mvcName;
+
 class htmlTable
 {
     public static function genarateTableFromMultiArray($array)
     {
-        $tableGen = '<table cellpadding="9" border="3" style="border-collapse:collapse">';
+
+        $tableGen = '<table cellpadding="6px" border="3px" style="border-collapse:collapse">';
+        
         
         $tableGen .= '<tr>';
         //this grabs the first element of the array so we can extract the field headings for the table
@@ -15,36 +19,46 @@ class htmlTable
         //this gets the page being viewed so that the table routes requests to the correct controller
         $referingPage = $_REQUEST['page'];
         foreach ($fieldHeadings as $heading) {
-            $tableGen .= '<th>' . $heading . '</th>';
+			if($heading != 'password')
+            	$tableGen .= '<th>' . $heading . '</th>';
         }
         $tableGen .= '</tr>';
         foreach ($array as $record) {
             $tableGen .= '<tr>';
             foreach ($record as $key => $value) {
-                if ($key == 'id') {
-                    $tableGen .= '<td><a href="index.php?page=' . $referingPage . '&action=show&id=' . $value . '">View</a></td>';
-                } else {
+				if($key == 'id') {
+                    $tableGen .= '<td><a href="index.php?page=' . $referingPage . '&action=show&id=' . $value . '">View</a>&nbsp;<a href="index.php?page=' . $referingPage . '&action=edit&id=' . $value . '">Edit</a></td>';
+                } elseif($key == 'isdone') {
+                    $tableGen .= '<td>' . ($value?'Yes':'No').'</td>';
+                } elseif($key != 'password') {
                     $tableGen .= '<td>' . $value . '</td>';
                 }
             }
             $tableGen .= '</tr>';
         }
+
         $tableGen .= '</table>';
+
         return $tableGen;
     }
+
     public static function generateTableFromOneRecord($innerArray)
     {
         $tableGen = '<table border="1" cellpadding="10"><tr>';
+
         $tableGen .= '<tr>';
         foreach ($innerArray as $innerRow => $value) {
             $tableGen .= '<th>' . $innerRow . '</th>';
         }
         $tableGen .= '</tr>';
+
         foreach ($innerArray as $value) {
             $tableGen .= '<td>' . $value . '</td>';
         }
+
         $tableGen .= '</tr></table><hr>';
         return $tableGen;
     }
 }
+
 ?>
