@@ -24,7 +24,9 @@ $user_data = accounts::findUserbyId($userID); ?>
 
 
 
-
+<form action="index.php?page=accounts&action=all" method="GET">
+<button type="submit">My Profile</button>
+</form>
 
 
 <ul>
