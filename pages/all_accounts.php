@@ -26,13 +26,11 @@ $user_data = accounts::findUserbyId($userID); ?>
 <h1>Username : <?=$user_data->fname?></h1>
 	
 	
-<ul>
-<li><a href="index.php?page=tasks&action=all">Todos</a>
-</li>
-<li>
-<a href="index.php?page=accounts&action=logout">Logout</a>
-</li>
-</ul>
+
+
+<button onclick = "window.location.href='index.php?page=tasks&action=all'"> Todos </button><br>
+<button onclick = "window.location.href='index.php?page=accounts&action=logout'"> Logout </button>
+
 
 
 <?php
