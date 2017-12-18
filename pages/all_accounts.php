@@ -16,12 +16,9 @@
 </head>
 
 <body>
-<h1>
-<?php
-//this how to print some data;
-$config = Manage::config();
-echo $config['site_name'];
-?></h1>
+
+<h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
+
 <h2>My Account</h2>
 
 <?php
