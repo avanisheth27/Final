@@ -16,31 +16,22 @@
 </head>
 
 <body>
-<h1>
-<?php
-//this how to print some data;
-$config = Manage::config();
-echo $config['site_name'];
-?></h1>
-
-<h1>Show Todos</h1>
-
+<h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
 <?php
 $userID = $_SESSION["userID"];
-$user_data = accounts::findUserbyId($userID);
-?>
+$user_data = accounts::findUserbyId($userID); ?>
 
-<h1>Hi <?=$user_data->fname?></h1>
+<h1>Username : <?=$user_data->fname?></h1>
 								
-<ul>
-<li><a href="index.php?page=accounts&action=all">My Account</a>
-</li>
-<li><a href="index.php?page=tasks&action=all">All Todos</a>
-</li>
-<li>
-<a href="index.php?page=accounts&action=logout">Logout</a>
-</li>
-</ul>
+
+<button onclick ="window.location.href='index.php?page=accounts&action=all'">My Profile</button><br>
+
+
+<button onclick ="window.location.href='index.php?page=tasks&action=create'">Add Todos</button><br>
+
+
+<button onclick ="window.location.href='index.php?page=accounts&action=logout'">Logout</button><br>
+
 
 <h3>Title: <?php echo $data->title; ?></h3>
 <h3>Body: <?php echo $data->body; ?></h3>
