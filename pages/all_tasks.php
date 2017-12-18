@@ -1,9 +1,10 @@
 <!doctype html>
 
 <html lang="en">
-	<body bgcolor="#f4cb42">
-		<style>
-button  {
+
+<body bgcolor="#f4cb42">
+<style>
+input {
     width: 20%;
     background-color: #000000;
     font-size: 12px;
@@ -15,10 +16,7 @@ button  {
     width: 30%;
     
 }
-
-button:hover {
-    opacity: 0.8;
-}</style>
+</style>
 <head>
     <meta charset="utf-8">
 
@@ -41,21 +39,18 @@ $user_data = accounts::findUserbyId($userID); ?>
 
 
 
-<form action="index.php?page=accounts&action=all" method="GET">
-<button type="submit">My Profile</button>
+<div>
+<form action="index.php?page=accounts&action=all" method="get">
+    <input type="submit" value="My Profile" />
 </form>
-	
-<form action="index.php?page=tasks&action=create" method="GET">
-<button type="submit">Add Tasks</button>
-</form>
+</div>
 
-<form action="index.php?page=accounts&action=logout" method="GET">
-<button type="submit">Logout</button>
-</form>
+
+
+
 
 <ul>
-<li><a href="index.php?page=accounts&action=all">My Account</a>
-</li>
+
 <li><a href="index.php?page=tasks&action=create">Add Todos</a>
 </li>
 <li>
