@@ -1,6 +1,30 @@
 <!doctype html>
 
 <html lang="en">
+<style>
+form {
+    border: 0px solid #f1f1f1;
+}
+.container 
+   {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 60px;
+    margin-left: 10px;
+   
+    
+    width: 20%;
+    padding: 22px 30px;
+    margin: 15px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+}
+
+</style>
 <head>
     <meta charset="utf-8">
 
@@ -17,8 +41,8 @@
 
 <body>
 <h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
-<h2>Register</h2>
 
+<div class= "container">
 <form action="index.php?page=accounts&action=register" method="post">
 
     First name: <input type="text" name="fname" placeholder="first name"required><br>
@@ -30,6 +54,7 @@
     Password: <input type="password" name="password" required><br>
     <input type="submit" value="Submit form">
 </form>
+</div>
 
 <script src="js/scripts.js"></script>
 </body>
