@@ -15,7 +15,7 @@ form {
     
     width: 20%;
     padding: 22px 30px;
-    margin: 15px auto;
+    margin: 45px auto;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -45,13 +45,13 @@ form {
 <div class= "container">
 <form action="index.php?page=accounts&action=register" method="post">
 
-    First name: <input type="text" name="fname" placeholder="first name"required><br>
-    Last name: <input type="text" name="lname"placeholder="lastname" required><br>
-    Email or username: <input type="email" name="email" placeholder="username"required><br>
-    Phone: <input type="tel" name="phone"placeholder="phone no" required><br>
-    Birthday: <input type="text" name="birthday" placeholder="yyyy-mm-dd" required><br>
-    Gender: <input type="radio" name="gender" value="male" checked="checked">Male <input type="radio" name="gender" value="female"> Female<br>
-    Password: <input type="password" name="password" required><br>
+    First name: <input type="text" name="fname" placeholder="first name"required><br><br>
+    Last name: <input type="text" name="lname"placeholder="lastname" required><br><br>
+    Email or username: <input type="email" name="email" placeholder="username"required><br><br>
+    Phone: <input type="tel" name="phone"placeholder="phone no" required><br><br>
+    Birthday: <input type="text" name="birthday" placeholder="yyyy-mm-dd" required><br><br>
+    Gender: <input type="radio" name="gender" value="male" checked="checked">Male <input type="radio" name="gender" value="female"> Female<br><br>
+    Password: <input type="password" name="password" required><br><br>
     <input type="submit" value="Submit form">
 </form>
 </div>
