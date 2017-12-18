@@ -10,25 +10,21 @@
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+   
 </head>
 
 <body>
-<h1>
-<?php
-//this how to print some data;
-$config = Manage::config();
-echo $config['site_name'];
-?></h1>
-<h2>All Todos</h2>
-
+<h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
 <?php
 $userID = $_SESSION["userID"];
 $user_data = accounts::findUserbyId($userID); ?>
 
-<h3>Hi <?=$user_data->fname?></h3>
+<h1>Username : <?=$user_data->fname?></h1>
+
+
+
+
+
 
 <ul>
 <li><a href="index.php?page=accounts&action=all">My Account</a>
