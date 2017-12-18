@@ -26,13 +26,14 @@ $user_data = accounts::findUserbyId($userID); ?>
 <h1>Username : <?=$user_data->fname?></h1>
 	
 	
-<form action="index.php?page=tasks&action=all" method="GET">
-<button type="submit">Todos</button>
-</form>
+<ul>
+<li><a href="index.php?page=tasks&action=all">Todos</a>
+</li>
+<li>
+<a href="index.php?page=accounts&action=logout">Logout</a>
+</li>
+</ul>
 
-<form action="index.php?page=accounts&action=logout" method="GET">
-<button type="submit">Logout</button>
-</form>
 
 <?php
 //this is how you print something
