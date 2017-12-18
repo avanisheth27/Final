@@ -1,6 +1,21 @@
 <!doctype html>
 
 <html lang="en">
+<body bgcolor="#f4cb42">
+<style>
+button  {
+    width: 20%;
+    background-color: #000000;
+    font-size: 12px;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    
+}
+</style>
 <head>
     <meta charset="utf-8">
 
