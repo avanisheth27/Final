@@ -1,52 +1,37 @@
 <!doctype html>
 
 <html lang="en">
+
 <style>
 form {
     border: 0px solid #f1f1f1;
 }
 
-.center {
-    text-align: center;
-    border: 3px;
-}
-
 body {
-   margin: 0 auto;
-background-repeat: no-repeat;
-background-size: 100% 1000px;
-   background-color: #42f4aa;
-}
-overall{
-width: 100px;
-height: 100px;
-text-align: center;
-background-color: rgba(52,73,94,0.7);
-border-radius: 4px;
-margin: 0 auto;
-margin-top: 100px;
+   
+   background-color:#f4cb42;
 }
 
-input[type="text"],input[type="password"] {
-text-align: center;
-height: 45px;
-width: 300px;
-font-size: 15px;
-margin-top: 30px;
-background-color: #fff;
-padding-lefit: 10px;
+input[type=text], input[type=password] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 08px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-button {
-margin-top: 5px;
-font-size: 20px;
-width: 340px;
-padding: 15px 30px;
-color: #fff;
-border-radius: 10px;
-border: none;
-cursor: pointer;
-background-color: #8878cc;
+button  {
+    width: 20%;
+    background-color: #000000;
+    font-size: 12px;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    
 }
 
 button:hover {
@@ -56,13 +41,12 @@ button:hover {
     margin: 0 175px;
     padding: 16px;
 }
-
 </style>
 <head>
     <meta charset="utf-8">
 
     <title>Todo Task Management</title>
-    <h1 align="center">Todo Task Manangement</h1>
+    <h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
 
     <meta name="description" content="Todo Task Management">
     <meta name="author" content="SitePoint">
@@ -88,10 +72,11 @@ button:hover {
         <label><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required><br>
 <br>
+        
         <button type="submit">Login</button>
     </div>
 </form>
-<h1><a href="index.php?page=accounts&action=register">Register</a></h1>
+<h1><a href="index.php?page=accounts&action=register"><font color="black"> New User, Register Now ! </font></a></h1>
 </div>
 
 <script src="js/scripts.js"></script>
