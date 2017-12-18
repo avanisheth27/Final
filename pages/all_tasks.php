@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+	<body bgcolor="#f4cb42">
 <head>
     <meta charset="utf-8">
 
