@@ -1,6 +1,39 @@
 <!doctype html>
 
 <html lang="en">
+	<body bgcolor="#f4cb42">
+<style>
+input {
+    width: 20%;
+    background-color: #000000;
+    font-size: 12px;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    
+}
+
+button  {
+    width: 20%;
+    background-color: #000000;
+    font-size: 12px;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+</style>
 <head>
     <meta charset="utf-8">
 
