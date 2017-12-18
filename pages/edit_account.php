@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    <body bgcolor="#f4cb42">
     <title>Todo Task Management</title>
     <meta name="description" content="Todo Task Management">
     <meta name="author" content="SitePoint">
@@ -16,14 +16,11 @@
 </head>
 
 <body>
-<h1>
-<?php
-//this how to print some data;
-$config = Manage::config();
-echo $config['site_name'];
-?></h1>
 
-<h2>Edit Account</h2>
+<h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
+
+
+
 
 <form action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="post">
     First name: <input type="text" name="fname" value="<?php echo $data->fname; ?>"><br>
