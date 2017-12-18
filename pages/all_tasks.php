@@ -27,7 +27,14 @@ $user_data = accounts::findUserbyId($userID); ?>
 <form action="index.php?page=accounts&action=all" method="GET">
 <button type="submit">My Profile</button>
 </form>
+	
+<form action="index.php?page=tasks&action=create" method="GET">
+<button type="submit">Add Tasks</button>
+</form>
 
+<form action="index.php?page=accounts&action=logout" method="GET">
+<button type="submit">Logout</button>
+</form>
 
 <ul>
 <li><a href="index.php?page=accounts&action=all">My Account</a>
