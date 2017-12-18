@@ -26,7 +26,7 @@
 <form action="index.php?page=accounts&action=login" method="POST" align="center">
 <div class="input">
         <div class="center">
-        <label><b>Username</b></label>
+        <label><b>Email ID</b></label>
         <input type="text" placeholder="Enter Username" name="email" required><br>
         <br><br>
 
