@@ -1,10 +1,20 @@
 <!doctype html>
 
 <html lang="en">
+<body bgcolor="#f4cb42">
 <style>
 form {
     border: 0px solid #f1f1f1;
 }
+
+
+
+body {
+   
+   background-color:;
+}
+
+
 .container 
    {
     margin-top: 50px;
@@ -52,7 +62,7 @@ form {
     Birthday: <input type="text" name="birthday" placeholder="yyyy-mm-dd" required><br><br>
     Gender: <input type="radio" name="gender" value="male" checked="checked">Male <input type="radio" name="gender" value="female"> Female<br><br>
     Password: <input type="password" name="password" required><br><br>
-    <input type="submit" value="Submit form">
+    <input type="submit" value="Submit">
 </form>
 </div>
 
