@@ -3,7 +3,46 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <body bgcolor="#f4cb42">
+    <body bgcolor="#f4cb42"><style>
+form {
+    border: 0px solid #f1f1f1;
+}
+
+body {
+   
+   background-color:#f4cb42;
+}
+
+input[type=text], input[type=password] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 08px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button  {
+    width: 20%;
+    background-color: #000000;
+    font-size: 12px;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    margin: 0 175px;
+    padding: 16px;
+}
+</style>
     <title>Todo Task Management</title>
     <meta name="description" content="Todo Task Management">
     <meta name="author" content="SitePoint">
@@ -29,7 +68,7 @@
     Phone: <input type="text" name="phone" value="<?php echo $data->phone; ?>"><br>
     Birthday: <input type="text" name="birthday" value="<?php echo $data->birthday; ?>"><br>
     Gender: <input type="text" name="gender" value="<?php echo $data->gender; ?>"><br>
-    <input type="submit" value="Submit form">
+    <button type="submit">Submit</button>
 </form>
 
 <a href="index.php?page=accounts&action=all"><button type="button">Back</button></a>
