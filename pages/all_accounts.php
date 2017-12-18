@@ -31,16 +31,16 @@ button  {
 </head>
 
 <body>
-
 <h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
+
+
 
 <?php
 $userID = $_SESSION["userID"];
 $user_data = accounts::findUserbyId($userID); ?>
 
 <h1>Username : <?=$user_data->fname?></h1>
-	
-	
+
 
 
 <button onclick = "window.location.href='index.php?page=tasks&action=all'"> Todos </button><br>
