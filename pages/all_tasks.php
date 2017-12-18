@@ -16,6 +16,23 @@ input {
     width: 30%;
     
 }
+button  {
+    width: 20%;
+    background-color: #000000;
+    font-size: 12px;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
 </style>
 <head>
     <meta charset="utf-8">
@@ -39,24 +56,19 @@ $user_data = accounts::findUserbyId($userID); ?>
 
 
 
+
 <div>
-<form action="index.php?page=accounts&action=all" method="get">
-    <input type="submit" value="My Profile" />
-</form>
+
+
+<button onclick ="window.location.href='index.php?page=accounts&action=all'">My Profile</button><br>
+
+
+<button onclick ="window.location.href='index.php?page=tasks&action=create'">Add Todos</button><br>
+
+
+<button onclick ="window.location.href='index.php?page=accounts&action=logout'">Logout</button><br>
+
 </div>
-
-
-
-
-
-<ul>
-
-<li><a href="index.php?page=tasks&action=create">Add Todos</a>
-</li>
-<li>
-<a href="index.php?page=accounts&action=logout">Logout</a>
-</li>
-</ul>
 
 <?php
 //this is how you print something
