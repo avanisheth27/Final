@@ -22,7 +22,7 @@ class accountsController extends http\controller
 
     public static function all()
     {
-		//By IPE TEAM
+		
 		session_start();
 		$userID = @$_SESSION["userID"];
 		if(!$userID) {
