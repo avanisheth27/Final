@@ -19,22 +19,20 @@
 
 <h1 align="left"><u><b>Todo Task Manangement</b></u></h1>
 
-<h2>My Account</h2>
-
 <?php
 $userID = $_SESSION["userID"];
-$user_data = accounts::findUserbyId($userID);
-?>
+$user_data = accounts::findUserbyId($userID); ?>
 
-<h1>Hi <?=$user_data->fname?></h1>
-								
-<ul>
-<li><a href="index.php?page=tasks&action=all">Todos</a>
-</li>
-<li>
-<a href="index.php?page=accounts&action=logout">Logout</a>
-</li>
-</ul>
+<h1>Username : <?=$user_data->fname?></h1>
+	
+	
+<form action="index.php?page=tasks&action=all" method="GET">
+<button type="submit">Todos</button>
+</form>
+
+<form action="index.php?page=accounts&action=logout" method="GET">
+<button type="submit">Logout</button>
+</form>
 
 <?php
 //this is how you print something
